@@ -1,0 +1,8 @@
+History.txt
+Manifest.txt
+README.rdoc
+Rakefile
+lib/ruby_template_handler.rb
+rails/init.rb
+test/test_helper.rb
+test/test_ruby_template_handler.rb
