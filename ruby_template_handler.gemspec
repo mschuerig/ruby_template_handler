@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = ["michael@schuerig.de"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.rdoc"]
   s.files = ["History.txt", "Manifest.txt", "README.rdoc", "Rakefile", "lib/ruby_template_handler.rb", "rails/init.rb", "test/test_helper.rb", "test/test_ruby_template_handler.rb"]
-  s.has_rdoc = true
+  s.has_rdoc = false
   s.homepage = %q{http://github.com/mschuerig/ruby_template_handler}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
