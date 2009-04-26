@@ -61,8 +61,8 @@ TMPL
   def test_render_template
     result = @template.render(@view)
     assert_kind_of String, result
-    assert_match /"identifier": "id"/, result
-    assert_match /"totalCount": 1/, result
+    assert_match(/"identifier": "id"/, result)
+    assert_match(/"totalCount": 1/, result)
   end
   
   def test_render_partial

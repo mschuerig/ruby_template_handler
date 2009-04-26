@@ -2,14 +2,14 @@
 require 'action_view'
 
 class RubyTemplateHandler < ActionView::TemplateHandler
-  VERSION = '0.0.1'
+  VERSION = '0.0.2'
   include ActionView::TemplateHandlers::Compilable
 
   def compile(template)
-    src =  'self.output_buffer = (' + template.source + ')'
+    src = template.source
     unless File.basename(template.filename).starts_with?('_')
-      src += '.to_json'
+      src = 'ActiveSupport::JSON.encode(' + src + ')'
     end
-    src
+    'self.output_buffer = (' + src + ')'
   end
 end
